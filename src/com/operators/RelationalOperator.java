@@ -10,7 +10,7 @@ public class RelationalOperator {
 		System.out.println(number1>number2);//false
 		System.out.println(number1<number2);//true
 		System.out.println(number1==number2);//== isequalto ---> false
-//		= ---> assignement to value variable vs == isequalto value
+//		= ---> assignement to value variable vs == isequalto value Primitive Datatype
 		System.out.println(number1!=number2);//true
 		System.out.println(number1>=number2);//false
 		System.out.println(number1<=number2);//true
