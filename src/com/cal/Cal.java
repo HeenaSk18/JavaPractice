@@ -12,7 +12,7 @@ public class Cal {
 		addNumbers(numberOne, numberTwo, numberThree);
 		addNumbers(23.5, 10);
 //		on the base of count of parameter decide to calls --- sequence of datatype
-//	methodoverloading --- within the class --- static, return, visibility role not
+//		method overloading --- within the class --- static, return, visibility role not
 //		improve readability of framework --- easis of remembers --- e.g -> json,xl,read =read methods are
 	}
 

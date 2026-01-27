@@ -1,8 +1,8 @@
-package com.cal;
+   package com.cal;
 
 public class CalculatorApp {
-
-	public static void main(String[] args) {// starting point
+//		main method can call is due to static 
+		public static void main(String[] args) {// starting point
 //		methods --> perform only one task
 		double number1;
 		int number2;
@@ -41,15 +41,15 @@ public class CalculatorApp {
 		return result;
 	}
 
-	private static double calculateSubOfTwoNumbers(double number1, int number2) {
+		private static double calculateSubOfTwoNumbers(double number1, int number2) {
 		double result;
 		result = number1 - number2;
 		return result;
 	}
 
-//	public static void calculateSum(); //method definition
-//  static method can call another static method
-	public static double calculateSum(double number1, int number2) { // method declaration
+//		public static void calculateSum(); //method definition
+//  		static method can call another static method
+		public static double calculateSum(double number1, int number2) { // method declaration
 		double result = number1 + number2;
 //		System.out.println(result);
 		return result;
