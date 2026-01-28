@@ -11,6 +11,7 @@ public class CalculatorApp {
 		number2 = 5;// 5
 		double result;
 
+		
 //		double result = number1 + number2;
 //		System.out.println(result);
 //		result variable will return 
@@ -42,6 +43,7 @@ public class CalculatorApp {
 		result = number1 / number2;
 		return result;
 	}
+	
 
 //	    result = number1-number2;
 //		System.out.println(result);//5.0

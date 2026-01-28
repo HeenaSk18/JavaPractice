@@ -21,6 +21,7 @@ public class StringMethodsPart3 {
 		
 		int indexOfCharacter=data.indexOf('o');//return the index of first occurence
 		System.out.println(indexOfCharacter);//4
+		
 		int LastindexOfCharacter=data.lastIndexOf('o');//return the index of last occurence
 		System.out.println(LastindexOfCharacter);//7
 	

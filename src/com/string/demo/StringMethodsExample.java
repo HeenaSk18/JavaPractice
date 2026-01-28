@@ -16,7 +16,7 @@ public class StringMethodsExample {
 //		System.out.println(data.equalsIgnoreCase(data2));
 //		case ignore check string equal or not
 
-//		Method 3: Length() Check
+//		Method 3: length() Check
 //		difference length --> property/atribute and check size of array   
 //		- VS -   
 //		length() --> size of String method -- total number of characters present
