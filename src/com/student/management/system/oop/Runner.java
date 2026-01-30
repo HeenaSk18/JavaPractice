@@ -5,40 +5,51 @@ public class Runner {
 	public static void main(String[] args) {
 		
 		Student s1 = new Student();
+		s1.setName("Heena");
+		s1.setAge(15);
+		s1.setRollNumber(-1);
+		s1.setMarksObtainedInEnglish(65);
+		s1.setMarksObtainedInMaths(-98);
+		s1.setMarksObtainedInScience(85);
+		s1.setGrade("A");
+		
+		System.out.println(s1.getName());
+		System.out.println(s1.getAge());
+		System.out.println(s1.getRollNumber());
+		System.out.println(s1.getMarksObtainedInEnglish());
+		System.out.println(s1.getMarksObtainedInMaths());
+		System.out.println(s1.getMarksObtainedInScience());
+		System.out.println(s1.getGrade());
+		s1.calculatedTotalMarks();
+
+		
+//		======================
 //		System.out.println(s1);//com.student.management.system.oop.Student@24d46ca6
 		
 //		System.out.println(s1.name);//null//instance will list will come s1.name
 //		System.out.println(s1.age);//0
 //		System.out.println(s1.grade);//null
 		
-		s1.name="Heena";
-		s1.age=21;
-		s1.rollNumber=1;
-		s1.marksObtainedInEnglish=58;
-		s1.marksObtainedInMaths=65;
-		s1.marksObtainedInScience=50;
-		s1.grade="B";
+//		s1.name="Heena";
+//		s1.age=21;
+//		s1.rollNumber=1;
+//		s1.marksObtainedInEnglish=58;
+//		s1.marksObtainedInMaths=65;
+//		s1.marksObtainedInScience=50;
+//		s1.grade="B";
 		
-		System.out.println(s1.name);
-		System.out.println(s1.age);
-		System.out.println(s1.rollNumber);
-		System.out.println(s1.marksObtainedInEnglish);
-		System.out.println(s1.marksObtainedInMaths);
-		System.out.println(s1.marksObtainedInScience);
-		System.out.println(s1.grade);
-		s1.calculatedTotalMarks();
+//		System.out.println(s1.name);
+//		System.out.println(s1.age);
+//		System.out.println(s1.rollNumber);
+//		System.out.println(s1.marksObtainedInEnglish);
+//		System.out.println(s1.marksObtainedInMaths);
+//		System.out.println(s1.marksObtainedInScience);
+//		System.out.println(s1.grade);
+//		s1.calculatedTotalMarks();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+//		==========================
+//		object create -- instance variable -- invalid assign to this
+//		some validation and access this use
 		
 		
 		
