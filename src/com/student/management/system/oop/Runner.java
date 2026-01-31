@@ -10,6 +10,19 @@ public class Runner {
 		Student s2 = new Student("Heena", 15, 15, 59, 76, 79, "A");
 		System.out.println(s2);
 
+		Student s3 = new Student("Heena", 15, 15, 59, 76, 79, "A");
+		System.out.println(s3);
+
+		System.out.println(s2.equals(s3));//true
+		
+//		Student exceptedData = new Student("Heena", 15, 15, 59, 76, 79, "A");
+//		System.out.println(exceptedData);
+
+//		Student actualData = new Student("Heena", 15, 15, 59, 76, 79, "A");
+//		System.out.println(actualData);
+
+//		System.out.println(exceptedData.equals(actualData));//true -- in autmotion framwork you will do
+		
 //		 with the help of toString() helps to print in terminal
 //		 if not there toString() then it will be print hashcode in terminal
 

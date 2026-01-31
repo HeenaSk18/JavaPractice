@@ -1,5 +1,7 @@
 package com.student.management.system.oop;
 
+import java.util.Objects;
+
 public class Student {// start class
 	// Instance variable -- inside class -- non static -- heap memory
 //	all the instance variable always mark private keyword
@@ -29,6 +31,7 @@ public class Student {// start class
 		this.marksObtainedInScience = marksObtainedInScience;
 		this.grade = grade;
 	}
+
 //  special method inside the class -- same name of the class
 //	the job intialization instance variable during object create
 //	construct don't have return type
@@ -122,6 +125,38 @@ public class Student {// start class
 		double totalMarks = marksObtainedInEnglish + marksObtainedInMaths + marksObtainedInScience;
 		System.out.println("Total Marks Obtained " + totalMarks);
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, grade, marksObtainedInEnglish, marksObtainedInMaths, marksObtainedInScience, name,
+				rollNumber);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		return age == other.age && Objects.equals(grade, other.grade)
+				&& Double.doubleToLongBits(marksObtainedInEnglish) == Double
+						.doubleToLongBits(other.marksObtainedInEnglish)
+				&& Double.doubleToLongBits(marksObtainedInMaths) == Double.doubleToLongBits(other.marksObtainedInMaths)
+				&& Double.doubleToLongBits(marksObtainedInScience) == Double
+						.doubleToLongBits(other.marksObtainedInScience)
+				&& Objects.equals(name, other.name) && rollNumber == other.rollNumber;
+	}
+
+//	s1.equals(s2) -- passing object reference -- always be object reference
+//	this -- current instance -- s1.equal(s1) -- its own -- return true
+//	if non-primitive -- null the -- return false -- s1.equal(null)
+//	getClass() --class type - s1 type -- student class s2 also same -- true or different then false
+//	each instance variable value of other object will compare s1 name s2 name compare objects
+//	if matching correctly then true or else false
+	
 	
 	
 	@Override
@@ -132,10 +167,5 @@ public class Student {// start class
 	}
 //	special method comes from object class -- prints/retruns String value
 //	one line description of the objects instance variable
-	
-	
-	
-	
-	
 
 }// end class
