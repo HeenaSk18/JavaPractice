@@ -18,14 +18,35 @@ public class Student {// start class
 //  variable created inside the non-static we call it instance variable
 //	Instance variable are intialized with default value --- heap memory -- implicitly
 
+	public Student(String name, int age, int rollNumber, double marksObtainedInEnglish, double marksObtainedInMaths,
+			double marksObtainedInScience, String grade) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.rollNumber = rollNumber;
+		this.marksObtainedInEnglish = marksObtainedInEnglish;
+		this.marksObtainedInMaths = marksObtainedInMaths;
+		this.marksObtainedInScience = marksObtainedInScience;
+		this.grade = grade;
+	}
+//  special method inside the class -- same name of the class
+//	the job intialization instance variable during object create
+//	construct don't have return type
+//	only calls once -- object creation only once -- updation can update again and again
+//  job of constructor is to assign -- first time intialization
+//	job of setter is to updation
+//	differents type of constructor -- 
 	public String getName() {
 //		getter -- retrive the value of instance variable
 		return name;
 	}
+
 //   getter + setter = validation can do
 	public void setName(String name) {
 //		setter -- parameter initalize a value passing to instance variable
 		this.name = name;
+//		this keyword use to diiferent with local variable with same name of instance variable 
+//		mutual class -- setter is meat for updation
 	}
 
 	public int getAge() {
@@ -33,10 +54,9 @@ public class Student {// start class
 	}
 
 	public void setAge(int age) {
-		if(age<21 && age>=10) {
-		this.age = age;
-		}
-		else {
+		if (age < 21 && age >= 10) {
+			this.age = age;
+		} else {
 			System.err.println("Invalid Student Age");
 		}
 	}
@@ -46,10 +66,9 @@ public class Student {// start class
 	}
 
 	public void setRollNumber(int rollNumber) {
-		if(rollNumber>=1) {
-		this.rollNumber = rollNumber;
-		}
-		else 	{
+		if (rollNumber >= 1) {
+			this.rollNumber = rollNumber;
+		} else {
 			System.err.println("Invalid Roll Number");
 		}
 	}
@@ -59,10 +78,9 @@ public class Student {// start class
 	}
 
 	public void setMarksObtainedInEnglish(double marksObtainedInEnglish) {
-		if(marksObtainedInEnglish>=0 && marksObtainedInEnglish<100) {
-		this.marksObtainedInEnglish = marksObtainedInEnglish;
-		}
-		else {
+		if (marksObtainedInEnglish >= 0 && marksObtainedInEnglish < 100) {
+			this.marksObtainedInEnglish = marksObtainedInEnglish;
+		} else {
 			System.err.println("Invalid Marks for English");
 		}
 	}
@@ -72,10 +90,9 @@ public class Student {// start class
 	}
 
 	public void setMarksObtainedInMaths(double marksObtainedInMaths) {
-		if(marksObtainedInMaths>=0 && marksObtainedInMaths<100) {
-		this.marksObtainedInMaths = marksObtainedInMaths;
-		}
-		else {
+		if (marksObtainedInMaths >= 0 && marksObtainedInMaths < 100) {
+			this.marksObtainedInMaths = marksObtainedInMaths;
+		} else {
 			System.err.println("Invalid Marks for Maths");
 		}
 	}
@@ -85,10 +102,9 @@ public class Student {// start class
 	}
 
 	public void setMarksObtainedInScience(double marksObtainedInScience) {
-		if(marksObtainedInScience>=0 && marksObtainedInScience<100) {
-		this.marksObtainedInScience = marksObtainedInScience;
-		}
-		else {
+		if (marksObtainedInScience >= 0 && marksObtainedInScience < 100) {
+			this.marksObtainedInScience = marksObtainedInScience;
+		} else {
 			System.err.println("Invalid Marks for Science");
 		}
 	}
@@ -106,5 +122,20 @@ public class Student {// start class
 		double totalMarks = marksObtainedInEnglish + marksObtainedInMaths + marksObtainedInScience;
 		System.out.println("Total Marks Obtained " + totalMarks);
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", rollNumber=" + rollNumber + ", marksObtainedInEnglish="
+				+ marksObtainedInEnglish + ", marksObtainedInMaths=" + marksObtainedInMaths
+				+ ", marksObtainedInScience=" + marksObtainedInScience + ", grade=" + grade + "]";
+	}
+//	special method comes from object class -- prints/retruns String value
+//	one line description of the objects instance variable
+	
+	
+	
+	
+	
 
 }// end class
